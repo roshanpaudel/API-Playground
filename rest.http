@@ -12,3 +12,14 @@ Content-Type: application/json
     "fName": "Santoshi",
     "lName": "Lc"
 }
+### PUT user request
+PUT http://localhost:8000
+Content-Type: application/json
+Authorization: T0KeN2Runa11
+
+{ 
+    "id": "2",
+    "fName": "Nismo"
+}
+### DELETE user request
+DELETE http://localhost:8000/4

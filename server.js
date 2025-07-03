@@ -28,7 +28,8 @@ app.put("/", (req, res) => {
     message: "put method",
   });
 });
-app.delete("/", (req, res) => {
+app.delete("/:id", (req, res) => {
+  console.log(req.params, "from delete");
   res.json({
     message: "delete method",
   });
