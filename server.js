@@ -5,22 +5,22 @@ const PORT = 8000;
 
 app.use(express.json());
 
-app.get("/", (res, req) => {
+app.get("/", (req, res) => {
   res.json({
     message: "get method",
   });
 });
-app.post("/", (res, req) => {
+app.post("/", (req, res) => {
   res.json({
     message: "post method",
   });
 });
-app.put("/", (res, req) => {
+app.put("/", (req, res) => {
   res.json({
     message: "put method",
   });
 });
-app.delete("/", (res, req) => {
+app.delete("/", (req, res) => {
   res.json({
     message: "delete method",
   });
@@ -29,5 +29,5 @@ app.delete("/", (res, req) => {
 app.listen(PORT, (error) => {
   error
     ? console.log(error)
-    : console.log(`Server runnig at http://localhost:${PORT}`);
+    : console.log(`Server running at http://localhost:${PORT}`);
 });
