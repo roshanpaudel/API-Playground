@@ -23,6 +23,7 @@ app.post("/", (req, res) => {
   });
 });
 app.put("/", (req, res) => {
+  console.log(req.body);
   res.json({
     message: "put method",
   });

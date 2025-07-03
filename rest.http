@@ -1,0 +1,14 @@
+### GET request
+GET http://localhost:8000
+
+
+
+### POST user request
+POST http://localhost:8000
+Content-Type: application/json
+
+{ 
+    "id": "4",
+    "fName": "Santoshi",
+    "lName": "Lc"
+}
